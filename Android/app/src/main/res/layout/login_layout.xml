@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kabc.android.main.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_above="@+id/loginText"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/loading_image"
+        app:srcCompat="@drawable/app_logo" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginField"
+        android:layout_alignStart="@+id/loginField"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/login"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <ProgressBar
+        android:id="@+id/loadingView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/loginField"
+        android:layout_alignEnd="@+id/loginField"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:indeterminateTint="@color/black"
+        android:indeterminateTintMode="src_in"
+        android:translationZ="90dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/loginField"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:autofillHints="username"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/login_field"
+        android:ems="10"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        android:paddingStart="7dp"
+        android:paddingEnd="40dp"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/incorrectLoginView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginField"
+        android:layout_alignStart="@+id/loginField"
+        android:fontFamily="sans-serif"
+        android:text="@string/incorrect_login"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/logInButton"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/incorrectLoginView"
+        android:layout_alignStart="@+id/loginField"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded"
+        android:enabled="false"
+        android:fontFamily="sans-serif"
+        android:text="@string/log_in"
+        android:textColor="@color/log_inactive_text"
+        app:backgroundTint="@color/login_inactive"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/anonLogInButton"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/logInButton"
+        android:layout_alignStart="@+id/loginField"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="sans-serif"
+        android:text="@string/anon_log_in"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
+</RelativeLayout>

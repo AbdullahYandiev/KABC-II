@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480" prefWidth="450" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.kabc.desktop.controller.DoctorsListController">
+    <Label layoutX="105" layoutY="20" prefWidth="245" text="Список специалистов" textAlignment="CENTER">
+        <font>
+            <Font name="Arial Bold" size="22"/>
+        </font>
+    </Label>
+    <TableView fx:id="doctorsTable" layoutY="70" prefHeight="330" prefWidth="430" AnchorPane.leftAnchor="10">
+        <columns>
+            <TableColumn fx:id="nameColumn" editable="false" prefWidth="348" text="ФИО"/>
+            <TableColumn fx:id="editColumn" editable="false" sortable="false"/>
+        </columns>
+    </TableView>
+    <Button fx:id="closeButton" layoutX="29" layoutY="421" mnemonicParsing="false" prefHeight="35" prefWidth="170"
+            text="Закрыть"/>
+    <Button fx:id="addDoctorButton" layoutX="252" layoutY="421" mnemonicParsing="false" prefHeight="35" prefWidth="170"
+            text="Добавить специалиста"/>
+</AnchorPane>

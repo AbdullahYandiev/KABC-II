@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="light_grey">#E1E1E3</color>
+    <color name="grey">#A7ADAD</color>
+    <color name="dark_grey">#94938F</color>
+    <color name="blue">#A2CEE2</color>
+    <color name="yellow">#FFF6C1</color>
+    <color name="purple">#8481B0</color>
+    <color name="pink">#FAC7B2</color>
+    <color name="orange">#EFAF8B</color>
+    <color name="green">#0FE321</color>
+    <color name="login_field">#DEDEDE</color>
+    <color name="login_incorrect">#F9EAEB</color>
+    <color name="log_inactive_text">#A1A1A1</color>
+    <color name="log_active_text">#FFFFFFFF</color>
+    <color name="login_inactive">#EAEAEA</color>
+    <color name="login_active">#9147FE</color>
+    <color name="main">#825A6C</color>
+    <color name="system">#02A093</color>
+</resources>

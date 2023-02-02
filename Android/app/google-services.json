@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "106421427611",
+    "firebase_url": "https://kabc-app-default-rtdb.firebaseio.com",
+    "project_id": "kabc-app",
+    "storage_bucket": "kabc-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106421427611:android:33b95b603d0900dc5c953e",
+        "android_client_info": {
+          "package_name": "com.msu.kabc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106421427611-s4trm246bvgdp53c353gabtres780h0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPKpLEtM-xP3hFnviAOPF19TgiYGBaR54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106421427611-s4trm246bvgdp53c353gabtres780h0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

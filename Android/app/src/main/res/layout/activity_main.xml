@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kabc.android.main.MainActivity">
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="21sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/conceptualThinking"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="90dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/loading_image"
+        app:srcCompat="@drawable/app_logo" />
+
+    <Button
+        android:id="@+id/conceptualThinking"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/patternReasoning"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded"
+        app:backgroundTint="@color/main"
+        android:text="@string/conceptual_thinking" />
+
+    <Button
+        android:id="@+id/patternReasoning"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/rounded"
+        app:backgroundTint="@color/main"
+        android:text="@string/pattern_reasoning" />
+
+    <Button
+        android:id="@+id/storyCompletion"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/patternReasoning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded"
+        app:backgroundTint="@color/main"
+        android:text="@string/story_completion" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded"
+        app:backgroundTint="@color/black"
+        android:text="@string/log_out" />
+</RelativeLayout>

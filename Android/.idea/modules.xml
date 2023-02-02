@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KABC_II.iml" filepath="$PROJECT_DIR$/.idea/modules/KABC_II.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KABC_II.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KABC_II.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KABC_II.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KABC_II.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KABC_II.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KABC_II.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KABC_II.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KABC_II.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

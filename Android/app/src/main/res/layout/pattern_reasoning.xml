@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kabc.android.tests.PatternReasoning">
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/loading_image"
+        android:scaleType="centerInside"
+        android:translationZ="90dp"
+        app:srcCompat="@drawable/home"
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/nextLevelButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/loading_image"
+        android:scaleType="centerInside"
+        android:translationZ="90dp"
+        app:srcCompat="@drawable/next_level"
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/resultView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/loading_image"
+        android:scaleType="centerInside"
+        android:visibility="invisible"
+        android:translationZ="90dp" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/digital"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:translationZ="90dp"
+        tools:ignore="RelativeOverlap" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/taskLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:layout_marginVertical="40dp"
+                android:layout_marginHorizontal="50dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/loading_image"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/light_grey">
+
+            <TableRow
+                android:id="@+id/answersLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/answer0"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/loading_image"
+                    android:padding="2dp"
+                    app:shapeAppearanceOverlay="@style/roundedImage"
+                    app:strokeColor="@color/black" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/answer1"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/loading_image"
+                    android:padding="2dp"
+                    app:shapeAppearanceOverlay="@style/roundedImage"
+                    app:strokeColor="@color/black" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/answer2"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/loading_image"
+                    android:padding="2dp"
+                    app:shapeAppearanceOverlay="@style/roundedImage"
+                    app:strokeColor="@color/black" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/answer3"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/loading_image"
+                    android:padding="2dp"
+                    app:shapeAppearanceOverlay="@style/roundedImage"
+                    app:strokeColor="@color/black" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/answer4"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/loading_image"
+                    android:padding="2dp"
+                    android:visibility="gone"
+                    app:shapeAppearanceOverlay="@style/roundedImage"
+                    app:strokeColor="@color/black" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/answer5"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/loading_image"
+                    android:padding="2dp"
+                    android:visibility="gone"
+                    app:shapeAppearanceOverlay="@style/roundedImage"
+                    app:strokeColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/lettersLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/answersLayout"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/letter0"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/answer_a"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/letter1"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/answer_b"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/letter2"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/answer_c"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/letter3"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/answer_d"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/letter4"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/answer_e"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/letter5"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/answer_f"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </TableRow>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
